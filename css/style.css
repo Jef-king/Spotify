@@ -2,6 +2,9 @@ a{
     text-decoration: none;
     color:white;
 }
+::-webkit-scrollbar{
+    display: none;
+}
 header {
     position: fixed;
     top: 0;
@@ -13,6 +16,7 @@ header {
     padding: 20px;
     background-color: black;
     color: white;
+    overflow: auto scroll;
 }
 
 header .logo {
@@ -34,11 +38,21 @@ header .menu{
 header .menu img{
     margin-right: 20px;
 }
-
-header .search {
-    /* And finally some styling for the search functionality */
+header .library{
+    margin-top: 30px;
+    display:flex;
+    flex-direction: column;
+    gap:20px;
+    margin-left: 30px;
 }
-header .library
-header>.library>a>img{
-    background-color: white;
+header .libraryitem{
+    width:100%;
+    flex-direction: row;
+    justify-content: space-evenly;
 }
+header .libraryitem img{
+    width:30px;
+    height: 30px;
+    margin-right: 20px;
+}
+header .library:first-child>
